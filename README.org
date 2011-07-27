@@ -17,7 +17,7 @@ Suomalainen kalenteri tulee käyttöön, kun tiedosto
 =suomalainen-kalenteri.el= ladataan ja sen sisältö evaluoidaan. Lienee
 järkevintä ladata se aina automaattisesti, kun Emacsin =calendar=-osa
 ladataan. Emacsin käynnistystiedostoon =~/.emacs= voi laittaa
-esimerkiksi seuraavanlaisen rivin:
+esimerkiksi seuraavanlaisen lausekkeen:
 
 #+BEGIN_SRC emacs-lisp
   (eval-after-load 'calendar
