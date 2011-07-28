@@ -32,8 +32,7 @@ Ohjelman lähdekoodi ja tämä esittelyteksti on ladattavissa osoitteesta
 
 Tekijä: Teemu Likonen <tlikonen@iki.fi>
 
-Tämä ohjelma on yleistä omaisuutta, ja se on siten vapaa
-tekijänoikeuksista. Ohjelmaa levitetään siinä toivossa, että siitä on
-hyötyä muille. Ohjelman tekijä ei anna mitään takuuta ohjelman
-toiminnasta, ei edes lupausta, että se sopii johonkin tiettyyn
-käyttötarkoitukseen.
+Tämä ohjelma on yleistä omaisuutta, eli se on vapaa tekijänoikeuksista.
+Ohjelmaa levitetään siinä toivossa, että siitä on hyötyä muille.
+Ohjelman tekijä ei anna mitään takuuta ohjelman toiminnasta, ei edes
+lupausta, että se sopii johonkin tiettyyn käyttötarkoitukseen.
