@@ -1,7 +1,6 @@
-* Suomalainen kalenteri Emacsiin
+* Suomalaiset merkkipäivät Emacsin kalenteriin
 
-*Suomalaiset merkkipäivät Emacsin kalenteriin* (Finnish national and
-Christian holidays for Emacs's calendar)
+(Finnish national and Christian holidays for Emacs's calendar)
 
 ** Tietoja
 
