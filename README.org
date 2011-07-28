@@ -8,8 +8,8 @@ Christian holidays for Emacs's calendar)
 =suomalainen-kalenteri.el= on ohjelma tai asetustiedosto, jonka avulla
 [[http://www.gnu.org/software/emacs/][Emacs]]-tekstieditorin kalenteriin saadaan suomalaiset merkkipäivät.
 Kalenteriin tulevat kaikki viralliset merkkipäivät sekä joitakin muita
-vakiintuneita merkkipäiviä kuten /aprillipäivä/, /Lucian päivä/ ja
-eräitä Ahvenanmaan merkkipäiviä.
+vakiintuneita merkkipäiviä kuten aprillipäivä, Lucian päivä ja eräitä
+Ahvenanmaan merkkipäiviä.
 
 ** Asentaminen
 
