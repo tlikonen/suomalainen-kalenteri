@@ -12,11 +12,11 @@ Ahvenanmaan merkkipäiviä.
 
 ** Asentaminen
 
-Suomalainen kalenteri tulee käyttöön, kun tiedosto
-=suomalainen-kalenteri.el= ladataan ja sen sisältö evaluoidaan. Lienee
-järkevintä ladata se aina automaattisesti, kun Emacsin =calendar=-osa
-ladataan. Emacsin käynnistystiedostoon =~/.emacs= voi laittaa
-esimerkiksi seuraavanlaisen lausekkeen:
+Suomalainen kalenteri tulee käyttöön, kun tiedoston
+=suomalainen-kalenteri.el= sisältämä Emacs Lisp -koodi evaluoidaan.
+Lienee järkevintä asettaa Emacs tekemään se automaattisesti, kun
+=calendar=-osa ladataan. Emacsin käynnistystiedostoon =~/.emacs= tai
+=~/.emacs.d/init.el= voi lisätä esimerkiksi seuraavanlaisen lausekkeen:
 
 #+BEGIN_SRC emacs-lisp
   (eval-after-load 'calendar
