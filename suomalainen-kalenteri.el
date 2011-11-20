@@ -2,6 +2,7 @@
 
 ;; Author: Teemu Likonen <tlikonen@iki.fi>
 ;; Version: 2011.11.20
+;; URL: https://github.com/tlikonen/suomalainen-kalenteri
 ;; Keywords: calendar holidays Finnish
 
 ;;; Commentary:
