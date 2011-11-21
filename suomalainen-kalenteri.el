@@ -1,26 +1,36 @@
 ;;; suomalainen-kalenteri.el --- Finnish holidays for Emacs calendar.
 
 ;; Author: Teemu Likonen <tlikonen@iki.fi>
-;; Version: 2011.11.20
+;; Version: 2011.11.21
 ;; URL: https://github.com/tlikonen/suomalainen-kalenteri
 ;; Keywords: calendar holidays Finnish
 
 ;;; Commentary:
 
-;; Suomalaiset merkkipäivät Emacsin         Finnish holidays for Emacs calendar.
-;; kalenteriin.
-
-;; Tämä ohjelma on yleistä                  This program is placed in the public
-;; omaisuutta.                              domain.
-
-;; Asennus                                  Installation
+;; *English*
 ;;
-;; Lisää Emacsin käynnistys-                For example, add the following
-;; tiedostoon esimerkiksi                   command to your Emacs initialization
-;; seuraavanlainen komento:                 file:
+;; Finnish holidays for Emacs calendar.
+;;
+;; License: This program is placed in the public domain.
+;;
+;; Installation: For example, add the following command to your Emacs
+;; initialization file:
 ;;
 ;;     (eval-after-load 'calendar
 ;;       '(load "~/path/suomalainen-kalenteri.el" t t))
+;;
+;;
+;; *Finnish*
+;;
+;; Suomalaiset merkkipäivät Emacsin kalenteriin.
+;;
+;; Lisenssi: Tämä ohjelma on yleistä omaisuutta.
+;;
+;; Asennus: Lisää Emacsin käynnistystiedostoon esimerkiksi
+;; seuraavanlainen komento:
+;;
+;;     (eval-after-load 'calendar
+;;       '(load "~/polku/suomalainen-kalenteri.el" t t))
 
 ;;; Code:
 
@@ -104,6 +114,7 @@ format.")
 
 
 ;; Muita merkkipäiviä
+
 (setq holiday-finnish-holidays
       (append holiday-finnish-holidays
               `((holiday-fixed 3 30 ,(concat "Ahvenanmaan demilitarisoinnin "
