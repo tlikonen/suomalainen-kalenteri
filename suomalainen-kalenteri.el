@@ -117,8 +117,7 @@ format.")
 ;; Muita merkkipäiviä
 
 (setq holiday-finnish-holidays
-      (append holiday-finnish-holidays
-              `((holiday-fixed 3 30 ,(concat "Ahvenanmaan demilitarisoinnin "
+      (append `((holiday-fixed 3 30 ,(concat "Ahvenanmaan demilitarisoinnin "
                                              "ja neutralisoinnin juhlapäivä"))
                 (holiday-fixed 4 1 "Aprillipäivä")
                 (holiday-fixed 4 7 "Maailman terveyspäivä")
@@ -131,7 +130,8 @@ format.")
                 (holiday-fixed 10 31 "Halloween")
                 (holiday-float 11 5 -1 "Älä osta mitään -päivä")
                 (holiday-fixed 12 10 "Ihmisoikeuksien päivä")
-                (holiday-fixed 12 13 "Lucian päivä"))))
+                (holiday-fixed 12 13 "Lucian päivä"))
+              holiday-finnish-holidays))
 
 
 (setq solar-n-hemi-seasons '("Kevätpäiväntasaus" "Kesäpäivänseisaus"
