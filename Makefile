@@ -9,9 +9,14 @@ LOADER := loader.el
 FILES := $(MAIN) $(PKG) $(LOADER) README.org
 NAME := $(BASE)-$(VERSION)
 
-elpa: $(PKG) $(LOADER)
-	tar --create --file $(NAME).tar --transform 's,^,$(NAME)/,' $(FILES)
-	gpg --yes --detach-sign $(NAME).tar
+elpa: $(NAME).tar
+sign: $(NAME).tar.sig
+
+$(NAME).tar: $(FILES)
+	tar --create --file $@ --transform 's,^,$(NAME)/,' $(FILES)
+
+$(NAME).tar.sig: $(NAME).tar
+	gpg --yes --detach-sign $<
 
 $(PKG):
 	@printf "(define-package \"%s\" \"%s\"\n  \"%s\")\n" \
@@ -29,4 +34,4 @@ tag:
 clean:
 	rm -f -- $(PKG) *.sig *.tar $(LOADER)
 
-.PHONY: elpa $(PKG) $(LOADER) tag clean
+.PHONY: elpa sign tag clean
