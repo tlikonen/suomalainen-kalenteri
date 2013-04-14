@@ -1,7 +1,6 @@
 ;;; suomalainen-kalenteri.el --- Finnish holidays for Emacs calendar.
 
 ;; Author: Teemu Likonen <tlikonen@iki.fi>
-;; Version: 2011.12.06
 ;; URL: https://github.com/tlikonen/suomalainen-kalenteri
 ;; Keywords: calendar holidays Finnish
 
