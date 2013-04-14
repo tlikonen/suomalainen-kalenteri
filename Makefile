@@ -14,7 +14,7 @@ elpa: $(PKG) $(LOADER)
 	gpg --yes --detach-sign $(NAME).tar
 
 $(PKG):
-	@printf '(define-package "%s" "%s"\n  "%s" nil)\n' \
+	@printf "(define-package \"%s\" \"%s\"\n  \"%s\")\n" \
 		"$(BASE)" "$(VERSION)" "$(DESC)" >$@
 	@cat $@
 
