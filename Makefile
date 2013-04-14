@@ -29,4 +29,4 @@ tag:
 clean:
 	rm -f -- $(PKG) *.sig *.tar $(LOADER)
 
-.PHONY: elpa tag clean
+.PHONY: elpa $(PKG) $(LOADER) tag clean
