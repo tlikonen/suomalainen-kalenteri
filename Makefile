@@ -6,7 +6,7 @@ VERSION := $(shell date +%Y.%-m.%-d)
 MAIN := $(BASE).el
 PKG := $(BASE)-pkg.el
 LOADER := loader.el
-FILES := $(MAIN) $(PKG) $(LOADER) README.org
+FILES := $(MAIN) $(PKG) $(LOADER) README.org README
 NAME := $(BASE)-$(VERSION)
 
 elpa: $(NAME).tar
@@ -23,6 +23,10 @@ $(PKG):
 		"$(BASE)" "$(VERSION)" "$(DESC)" >$@
 	@cat $@
 
+README: README.org
+	emacs -Q --batch --file $< --funcall org-export-as-ascii
+	mv -f -- $@.txt $@
+
 $(LOADER):
 	@printf ";;;###autoload\n(eval-after-load 'calendar\n" >$@
 	@printf "  '(load \"$(MAIN)\" t t))\n" >>$@
@@ -32,6 +36,6 @@ tag:
 	git tag -s $(VERSION) -m 'Version $(VERSION)' HEAD
 
 clean:
-	rm -f -- $(PKG) *.sig *.tar $(LOADER)
+	rm -f -- $(PKG) *.sig *.tar $(LOADER) README
 
 .PHONY: elpa sign tag clean
