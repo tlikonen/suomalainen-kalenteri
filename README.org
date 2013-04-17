@@ -1,8 +1,10 @@
-* Suomalaiset merkkipäivät Emacsin kalenteriin
+#+TITLE: Suomalaiset merkkipäivät Emacsin kalenteriin
+#+OPTIONS: author:nil email:nil timestamp:nil toc:nil num:nil
+#+LANGUAGE: fi
 
 (Finnish national and Christian holidays for Emacs's calendar)
 
-** Tietoja
+* Tietoja
 
 =suomalainen-kalenteri.el= on ohjelma tai asetustiedosto, jonka avulla
 [[http://www.gnu.org/software/emacs/][Emacs]]-tekstieditorin kalenteriin saadaan suomalaiset merkkipäivät.
@@ -10,7 +12,7 @@ Kalenteriin tulevat kaikki viralliset merkkipäivät sekä joitakin muita
 vakiintuneita merkkipäiviä kuten aprillipäivä, Lucian päivä ja eräitä
 Ahvenanmaan merkkipäiviä.
 
-** Asentaminen
+* Asentaminen
 
 Suomalainen kalenteri tulee käyttöön, kun tiedoston
 =suomalainen-kalenteri.el= sisältämä Emacs Lisp -koodi evaluoidaan.
@@ -23,12 +25,12 @@ Lienee järkevintä asettaa Emacs tekemään se automaattisesti, kun
     '(load "~/hakemistopolku/suomalainen-kalenteri.el" t t))
 #+END_SRC
 
-** Lähdekoodi
+* Lähdekoodi
 
 Ohjelman lähdekoodi ja tämä esittelyteksti on ladattavissa osoitteesta
 <[[https://github.com/tlikonen/suomalainen-kalenteri]]>.
 
-** Tekijä ja tekijänoikeus
+* Tekijä ja tekijänoikeus
 
 Tekijä: Teemu Likonen <tlikonen@iki.fi>
 
