@@ -6,7 +6,7 @@ VERSION := $(shell date +%Y.%-m.%-d)
 MAIN := $(BASE).el
 PKG := $(BASE)-pkg.el
 LOADER := loader.el
-FILES := $(MAIN) $(PKG) $(LOADER) README.org README
+FILES := $(MAIN) $(PKG) $(LOADER) README
 NAME := $(BASE)-$(VERSION)
 
 elpa: $(NAME).tar
@@ -23,9 +23,8 @@ $(PKG):
 		"$(BASE)" "$(VERSION)" "$(DESC)" >$@
 	@cat $@
 
-README: README.org
-	emacs -Q --batch --file $< --funcall org-export-as-ascii
-	mv -f -- $@.txt $@
+README: README.md
+	cp -f -- $< $@
 
 $(LOADER):
 	@printf ";;;###autoload\n(eval-after-load 'calendar\n" >$@
