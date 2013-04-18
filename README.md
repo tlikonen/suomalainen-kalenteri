@@ -19,11 +19,17 @@ Ahvenanmaan merkkipäiviä.
 Asentaminen
 -----------
 
-Suomalainen kalenteri tulee käyttöön, kun tiedoston
-`suomalainen-kalenteri.el` sisältämä Emacs Lisp -koodi evaluoidaan.
-Lienee järkevintä asettaa Emacs tekemään se automaattisesti, kun
-`calendar`-osa ladataan. Emacsin käynnistystiedostoon `~/.emacs` tai
-`~/.emacs.d/init.el` voi lisätä esimerkiksi seuraavanlaisen lausekkeen:
+Helpoin asennustapa on [Marmalade][]-pakettivaraston käyttäminen. Sitä
+kautta asennus on automaattinen eikä mitään erityistä tarvitse tehdä.
+
+[Marmalade]: http://marmalade-repo.org/
+
+Asentamiseen on myös toinen tapa: Suomalainen kalenteri tulee käyttöön,
+kun tiedoston `suomalainen-kalenteri.el` sisältämä Emacs Lisp -koodi
+evaluoidaan. Lienee järkevintä asettaa Emacs tekemään se
+automaattisesti, kun `calendar`-osa ladataan. Emacsin
+käynnistystiedostoon `~/.emacs` tai `~/.emacs.d/init.el` voi lisätä
+esimerkiksi seuraavanlaisen lausekkeen:
 
     (eval-after-load 'calendar
       '(load "~/hakemistopolku/suomalainen-kalenteri.el" t t))
