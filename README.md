@@ -33,7 +33,7 @@ Lähdekoodi
 ----------
 
 Ohjelman lähdekoodi ja tämä esittelyteksti on ladattavissa osoitteesta
-<https://github.com/tlikonen/suomalainen-kalenteri> .
+<<https://github.com/tlikonen/suomalainen-kalenteri>>.
 
 
 Tekijä ja tekijänoikeus
