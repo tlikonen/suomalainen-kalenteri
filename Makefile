@@ -6,13 +6,14 @@ VERSION := $(shell date +%Y.%-m.%-d)
 MAIN := $(BASE).el
 PKG := $(BASE)-pkg.el
 LOADER := loader.el
-FILES := $(MAIN) $(PKG) $(LOADER) README
+FILES := $(MAIN) $(PKG) $(LOADER)
 NAME := $(BASE)-$(VERSION)
 
-elpa: $(NAME).tar
+elpa: $(FILES)
+tar: elpa $(NAME).tar
 sign: $(NAME).tar.sig
 
-$(NAME).tar: $(FILES)
+$(NAME).tar: $(FILES) README
 	tar --create --file $@ --transform 's,^,$(NAME)/,' $(FILES)
 
 $(NAME).tar.sig: $(NAME).tar
@@ -23,18 +24,18 @@ $(PKG):
 		"$(BASE)" "$(VERSION)" "$(DESC)" >$@
 	@cat $@
 
-README: README.md
-	cp -f -- $< $@
-
 $(LOADER):
 	@printf ";;;###autoload\n(eval-after-load 'calendar\n" >$@
 	@printf "  '(load \"$(MAIN)\" t t))\n" >>$@
 	@cat $@
 
+README: README.md
+	cp -f -- $< $@
+
 tag:
 	git tag -s $(VERSION) -m 'Version $(VERSION)' HEAD
 
 clean:
-	rm -f -- $(PKG) *.sig *.tar $(LOADER) README
+	rm -f -- *.sig *.tar README
 
-.PHONY: elpa sign tag clean
+.PHONY: elpa tar sign tag clean $(PKG) $(LOADER)
