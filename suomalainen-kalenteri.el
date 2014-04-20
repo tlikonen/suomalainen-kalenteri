@@ -6,30 +6,9 @@
 
 ;;; Commentary:
 
-;; *English*
-;;
-;; Finnish holidays for Emacs calendar.
+;; Finnish national and Christian holidays for Emacs calendar.
 ;;
 ;; License: This program is placed in the public domain.
-;;
-;; Installation: For example, add the following command to your Emacs
-;; initialization file:
-;;
-;;     (eval-after-load 'calendar
-;;       '(load "~/path/suomalainen-kalenteri.el" t t))
-;;
-;;
-;; *Finnish*
-;;
-;; Suomalaiset merkkipäivät Emacsin kalenteriin.
-;;
-;; Lisenssi: Tämä ohjelma on yleistä omaisuutta.
-;;
-;; Asennus: Lisää Emacsin käynnistystiedostoon esimerkiksi
-;; seuraavanlainen komento:
-;;
-;;     (eval-after-load 'calendar
-;;       '(load "~/polku/suomalainen-kalenteri.el" t t))
 
 ;;; Code:
 
