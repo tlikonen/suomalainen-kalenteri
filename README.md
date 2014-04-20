@@ -19,14 +19,16 @@ Ahvenanmaan merkkipäiviä.
 Asentaminen
 -----------
 
-Helpoin asennustapa on [Marmalade][]-pakettivaraston käyttäminen. Sitä
-kautta asennus on automaattinen eikä mitään erityistä tarvitse tehdä.
+Helpoin asennustapa on [Marmalade][]- tai [Melpa][]-pakettivaraston
+käyttäminen. Sitä kautta asennus on automaattinen eikä mitään erityistä
+tarvitse tehdä.
 
 [Marmalade]: http://marmalade-repo.org/
+[Melpa]:     http://melpa.milkbox.net/
 
-Asentamiseen on myös toinen tapa: Suomalainen kalenteri tulee käyttöön,
+Asentamiseen on myös toinen tapa: suomalainen kalenteri tulee käyttöön,
 kun tiedoston `suomalainen-kalenteri.el` sisältämä Emacs Lisp -koodi
-evaluoidaan. Lienee järkevintä asettaa Emacs tekemään se
+suoritetaan. Lienee järkevintä asettaa Emacs tekemään se
 automaattisesti, kun `calendar`-osa ladataan. Emacsin
 käynnistystiedostoon `~/.emacs` tai `~/.emacs.d/init.el` voi lisätä
 esimerkiksi seuraavanlaisen lausekkeen:
