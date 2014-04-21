@@ -105,18 +105,6 @@ format.")
    (holiday-float 10 0 -1 "Kesäaika päättyy (klo 04.00, UTC+3 -> UTC+2)")
    (solar-equinoxes-solstices)))
 
-
-;; Muita merkkipäiviä
-
-(setq holiday-finnish-holidays
-      (append `((holiday-fixed 3 30 ,(concat "Ahvenanmaan demilitarisoinnin "
-                                             "ja neutralisoinnin juhlapäivä"))
-                (holiday-float 4 0 -1 "Ahvenanmaan lipun päivä")
-                (holiday-fixed 6 9 "Ahvenanmaan itsehallintopäivä")
-                (holiday-fixed 12 13 "Lucian päivä"))
-              holiday-finnish-holidays))
-
-
 (setq solar-n-hemi-seasons '("Kevätpäiväntasaus" "Kesäpäivänseisaus"
                              "Syyspäiväntasaus" "Talvipäivänseisaus")
       solar-s-hemi-seasons '("Syyspäiväntasaus" "Talvipäivänseisaus"
