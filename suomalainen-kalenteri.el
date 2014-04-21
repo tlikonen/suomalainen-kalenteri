@@ -15,7 +15,8 @@
 
 (eval-when-compile
   (require 'calendar)
-  (require 'holidays))
+  (require 'holidays)
+  (require 'solar))
 
 
 ;; Yleiset suomalaisen kalenterin merkkipäivät
