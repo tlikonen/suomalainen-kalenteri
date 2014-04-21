@@ -20,12 +20,10 @@ kalenterissa.
 Asentaminen
 -----------
 
-Helpoin asennustapa on [Marmalade][]- tai [Melpa][]-pakettivaraston
-käyttäminen. Sitä kautta asennus on automaattinen eikä mitään erityistä
-tarvitse tehdä.
+Helpoin asennustapa on [Melpa][]-pakettivaraston käyttäminen. Sitä
+kautta asennus on automaattinen eikä mitään erityistä tarvitse tehdä.
 
-[Marmalade]: http://marmalade-repo.org/
-[Melpa]:     http://melpa.milkbox.net/
+[Melpa]: http://melpa.milkbox.net/
 
 Asentamiseen on myös toinen tapa: suomalainen kalenteri tulee käyttöön,
 kun tiedoston `suomalainen-kalenteri.el` sisältämä Emacs Lisp -koodi
