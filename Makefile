@@ -27,7 +27,7 @@ $(PKG):
 
 $(LOADER): Makefile $(MAIN)
 	@printf ";;;###autoload\n(eval-after-load 'calendar\n" >$@
-	@printf "  '(load \"$(MAIN)\" t t))\n" >>$@
+	@printf "  '(load \"$(BASE)\" t t))\n" >>$@
 	@cat $@
 
 README: README.md

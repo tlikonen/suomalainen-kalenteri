@@ -1,3 +1,3 @@
 ;;;###autoload
 (eval-after-load 'calendar
-  '(load "suomalainen-kalenteri.el" t t))
+  '(load "suomalainen-kalenteri" t t))
