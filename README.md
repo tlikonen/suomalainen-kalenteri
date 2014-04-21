@@ -9,11 +9,12 @@ Tietoja
 
 `suomalainen-kalenteri.el` on ohjelma tai asetustiedosto, jonka avulla
 [Emacs][]-tekstieditorin kalenteriin saadaan suomalaiset merkkipäivät.
-Kalenteriin tulevat kaikki viralliset merkkipäivät sekä joitakin muita
-vakiintuneita merkkipäiviä kuten aprillipäivä, Lucian päivä ja eräitä
-Ahvenanmaan merkkipäiviä.
+Kalenteriin tulevat viralliset suomalaiset merkkipäivät, jotka on
+julkaistu [Helsingin yliopiston almanakkatoimiston][Almanakka]
+kalenterissa.
 
-[Emacs]: http://www.gnu.org/software/emacs/
+[Emacs]:     http://www.gnu.org/software/emacs/
+[Almanakka]: http://almanakka.helsinki.fi/
 
 
 Asentaminen
