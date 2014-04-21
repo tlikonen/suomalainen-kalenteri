@@ -6,14 +6,15 @@ VERSION := $(shell date +%Y.%-m.%-d)
 MAIN := $(BASE).el
 PKG := $(BASE)-pkg.el
 LOADER := loader.el
-FILES := $(MAIN) $(PKG) $(LOADER)
+FILES := $(MAIN) $(PKG) $(LOADER) README
 NAME := $(BASE)-$(VERSION)
 
-elpa: $(FILES)
-tar: elpa $(NAME).tar
+elpa: $(PKG) $(LOADER)
+tar: $(NAME).tar
 sign: $(NAME).tar.sig
+elc: $(BASE).elc
 
-$(NAME).tar: $(FILES) README
+$(NAME).tar: $(FILES)
 	tar --create --file $@ --transform 's,^,$(NAME)/,' $(FILES)
 
 $(NAME).tar.sig: $(NAME).tar
@@ -24,7 +25,7 @@ $(PKG):
 		"$(BASE)" "$(VERSION)" "$(DESC)" >$@
 	@cat $@
 
-$(LOADER):
+$(LOADER): Makefile $(MAIN)
 	@printf ";;;###autoload\n(eval-after-load 'calendar\n" >$@
 	@printf "  '(load \"$(MAIN)\" t t))\n" >>$@
 	@cat $@
@@ -32,10 +33,13 @@ $(LOADER):
 README: README.md
 	cp -f -- $< $@
 
+$(BASE).elc: %.elc: %.el
+	emacs -Q --batch -f batch-byte-compile $<
+
 tag:
 	git tag -s $(VERSION) -m 'Version $(VERSION)' HEAD
 
 clean:
-	rm -f -- *.sig *.tar README
+	rm -f -- *.sig *.tar *.elc README
 
-.PHONY: elpa tar sign tag clean $(PKG) $(LOADER)
+.PHONY: elpa tar sign tag clean $(PKG)
