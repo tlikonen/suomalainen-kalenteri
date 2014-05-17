@@ -23,7 +23,7 @@
   (require 'solar))
 
 
-(defconst holiday-finnish-holidays
+(defconst suomalainen-kalenteri
   '((solar-equinoxes-solstices)
 
     (holiday-fixed 1 1 "Uudenvuodenpäivä")
@@ -122,7 +122,7 @@ format.")
                              "Kevätpäiväntasaus" "Kesäpäivänseisaus"))
 
 
-(setq calendar-holidays holiday-finnish-holidays)
+(setq calendar-holidays suomalainen-kalenteri)
 
 (provide 'suomalainen-kalenteri)
 
