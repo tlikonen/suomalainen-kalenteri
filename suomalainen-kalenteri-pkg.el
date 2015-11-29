@@ -1,2 +1,2 @@
-(define-package "suomalainen-kalenteri" "2014.6.15"
+(define-package "suomalainen-kalenteri" "2015.11.29"
   "Finnish national and Christian holidays for calendar")

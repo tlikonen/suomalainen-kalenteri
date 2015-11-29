@@ -37,7 +37,7 @@ $(BASE).elc: %.elc: %.el
 	emacs -Q --batch -f batch-byte-compile $<
 
 tag:
-	git tag -s $(VERSION) -m 'Version $(VERSION)' HEAD
+	git tag -s $(VERSION) -m '$(VERSION)' HEAD
 
 clean:
 	rm -f -- *.sig *.tar *.elc README
