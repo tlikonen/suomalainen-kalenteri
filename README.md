@@ -48,7 +48,11 @@ Tekijä ja tekijänoikeus
 
 Tekijä: Teemu Likonen <<tlikonen@iki.fi>>
 
+PGP: [4E10 55DC 84E9 DFF6 13D7 8557 719D 69D3 2453 9450][PGP]
+
 Tämä ohjelma on yleistä omaisuutta, eli se on vapaa tekijänoikeuksista.
 Ohjelmaa levitetään siinä toivossa, että siitä on hyötyä muille.
 Ohjelman tekijä ei anna mitään takuuta ohjelman toiminnasta, ei edes
 lupausta, että se sopii johonkin tiettyyn käyttötarkoitukseen.
+
+[PGP]: http://koti.kapsi.fi/~dtw/pgp-key.asc
