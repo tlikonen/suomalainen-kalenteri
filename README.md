@@ -55,4 +55,4 @@ Ohjelmaa levitetään siinä toivossa, että siitä on hyötyä muille.
 Ohjelman tekijä ei anna mitään takuuta ohjelman toiminnasta, ei edes
 lupausta, että se sopii johonkin tiettyyn käyttötarkoitukseen.
 
-[PGP]: http://koti.kapsi.fi/~dtw/pgp-key.asc
+[PGP]: http://www.iki.fi/tlikonen/pgp-key.asc
