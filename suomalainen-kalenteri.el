@@ -76,7 +76,6 @@
     (holiday-float 5 0 3 "Kaatuneitten muistopäivä (liputus, puolitangossa)")
 
     (holiday-fixed 6 4 "Puolustusvoimain lippujuhlan päivä (liputus)")
-    (holiday-fixed 6 5 "Maailman ympäristöpäivä")
     (holiday-float 6 6 1 "Juhannuspäivä, Suomen lipun päivä (liputus)" 20)
 
     (holiday-fixed 7 6 "Eino Leinon päivä, runon ja suven päivä (liputus)")
