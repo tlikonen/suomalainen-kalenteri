@@ -36,10 +36,11 @@ README: README.md
 $(BASE).elc: %.elc: %.el
 	emacs -Q --batch -f batch-byte-compile $<
 
-tag:
+new-version: $(PKG)
+	git commit -m "Versio $(VERSION)" -- $(PKG)
 	git tag -s $(VERSION) -m '$(VERSION)' HEAD
 
 clean:
 	rm -f -- *.sig *.tar *.elc README
 
-.PHONY: elpa tar sign tag clean $(PKG)
+.PHONY: elpa tar sign tag clean $(PKG) new-version
