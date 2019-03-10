@@ -85,9 +85,9 @@
     (when (>= displayed-year 2020)
       (holiday-float 8 6 -1 "Suomen luonnon päivä"))
 
-    (holiday-float 9 0 1 "Mikkelinpäivä" 29)
     (when (>= displayed-year 2010)
       (holiday-fixed 9 5 "Yrittäjän päivä"))
+    (holiday-float 9 0 1 "Mikkelinpäivä" 29)
 
     (holiday-fixed 10 10 "Aleksis Kiven päivä, suomalaisen kirjallisuuden päivä (liputus)")
     (holiday-fixed 10 24 "YK:n päivä (liputus)")
