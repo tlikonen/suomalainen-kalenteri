@@ -81,6 +81,9 @@
     (holiday-fixed 7 6 "Eino Leinon päivä, runon ja suven päivä (liputus)")
     (holiday-fixed 7 27 "Unikeonpäivä")
 
+    (when (>= displayed-year 2020)
+      (holiday-float 8 6 -1 "Suomen luonnon päivä"))
+
     (holiday-float 9 0 1 "Mikkelinpäivä" 29)
     (when (>= displayed-year 2010)
       (holiday-fixed 9 5 "Yrittäjän päivä"))
