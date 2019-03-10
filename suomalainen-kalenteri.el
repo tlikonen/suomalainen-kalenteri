@@ -68,6 +68,7 @@
       (holiday-fixed 4 8 "Romanien kansallispäivä"))
     (holiday-fixed 4 9 "Mikael Agricolan päivä, suomen kielen päivä (liputus)")
     (holiday-fixed 4 27 "Kansallinen veteraanipäivä (liputus)")
+
     (holiday-fixed 5 1 "Vappu, suomalaisen työn päivä (liputus)")
     (holiday-fixed 5 9 "Eurooppa-päivä (liputus)")
     (holiday-fixed 5 12 "J. V. Snellmanin päivä, suomalaisuuden päivä (liputus)")
@@ -108,12 +109,14 @@
     (holiday-advent 7 "2. adventtisunnuntai")
     (holiday-advent 14 "3. adventtisunnuntai")
     (holiday-advent 21 "4. adventtisunnuntai")
+
     (holiday-fixed 12 25 "Joulupäivä")
     (holiday-fixed 12 26 "Tapaninpäivä")
     (holiday-sexp '(let ((day (list 12 27 year)))
                      (if (equal 0 (calendar-day-of-week day)) day))
                   "Apostoli Johanneksen päivä")
     (holiday-fixed 12 28 "Viattomien lasten päivä")
+
     (holiday-float 3 0 -1 "Kesäaika alkaa (klo 03.00, UTC+2 -> UTC+3)")
     (holiday-float 10 0 -1 "Kesäaika päättyy (klo 04.00, UTC+3 -> UTC+2)"))
 
