@@ -32,8 +32,8 @@ automaattisesti, kun `calendar`-osa ladataan. Emacsin
 käynnistystiedostoon `~/.emacs` tai `~/.emacs.d/init.el` voi lisätä
 esimerkiksi seuraavanlaisen lausekkeen:
 
-    (eval-after-load 'calendar
-      '(load "~/hakemistopolku/suomalainen-kalenteri.el" t t))
+    (with-eval-after-load 'calendar
+      (load "~/hakemisto/suomalainen-kalenteri.el" t t))
 
 
 Lähdekoodi
