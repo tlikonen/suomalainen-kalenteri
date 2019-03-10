@@ -23,7 +23,7 @@ Asentaminen
 Helpoin asennustapa on [Melpa][]-pakettivaraston käyttäminen. Sitä
 kautta asennus on automaattinen eikä mitään erityistä tarvitse tehdä.
 
-[Melpa]: http://melpa.milkbox.net/
+[Melpa]: http://melpa.org/
 
 Asentamiseen on myös toinen tapa: suomalainen kalenteri tulee käyttöön,
 kun tiedoston `suomalainen-kalenteri.el` sisältämä Emacs Lisp -koodi
