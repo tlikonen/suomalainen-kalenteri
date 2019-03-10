@@ -64,8 +64,8 @@
     (holiday-easter-etc 105 "Kirkastussunnuntai")
     (holiday-easter-etc 203 "Uskonpuhdistuksen muistopäivä")
 
-    (holiday-sexp '(if (>= year 2014) (list 4 8 year))
-                  "Romanien kansallispäivä")
+    (when (>= displayed-year 2014)
+      (holiday-fixed 4 8 "Romanien kansallispäivä"))
     (holiday-fixed 4 9 "Mikael Agricolan päivä, suomen kielen päivä (liputus)")
     (holiday-fixed 4 27 "Kansallinen veteraanipäivä (liputus)")
     (holiday-fixed 5 1 "Vappu, suomalaisen työn päivä (liputus)")
@@ -82,7 +82,8 @@
     (holiday-fixed 7 27 "Unikeonpäivä")
 
     (holiday-float 9 0 1 "Mikkelinpäivä" 29)
-    (holiday-fixed 9 5 "Yrittäjän päivä")
+    (when (>= displayed-year 2010)
+      (holiday-fixed 9 5 "Yrittäjän päivä"))
 
     (holiday-fixed 10 10 "Aleksis Kiven päivä, suomalaisen kirjallisuuden päivä (liputus)")
     (holiday-fixed 10 24 "YK:n päivä (liputus)")
@@ -93,8 +94,9 @@
     (holiday-fixed 11 20 "Lapsen oikeuksien päivä")
 
     (holiday-fixed 12 6 "Itsenäisyyspäivä (liputus)")
-    (holiday-sexp '(if (>= year 2011) (list 12 8 year))
-                  "Jean Sibeliuksen päivä, suomalaisen musiikin päivä (liputus)")
+    (when (>= displayed-year 2011)
+      (holiday-fixed 12 8 "Jean Sibeliuksen päivä, suomalaisen musiikin päivä (liputus)"))
+
     (holiday-advent -14 "Valvomisen sunnuntai")
     (holiday-advent -7 "Tuomiosunnuntai")
     (holiday-advent 0 "1. adventtisunnuntai")
