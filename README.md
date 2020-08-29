@@ -48,11 +48,13 @@ Tekijä ja tekijänoikeus
 
 Tekijä: Teemu Likonen <<tlikonen@iki.fi>>
 
-PGP: [4E10 55DC 84E9 DFF6 13D7 8557 719D 69D3 2453 9450][PGP]
+OpenPGP-avain: [4E10 55DC 84E9 DFF6 13D7 8557 719D 69D3 2453 9450][PGP]
 
-Tämä ohjelma on yleistä omaisuutta, eli se on vapaa tekijänoikeuksista.
-Ohjelmaa levitetään siinä toivossa, että siitä on hyötyä muille.
-Ohjelman tekijä ei anna mitään takuuta ohjelman toiminnasta, ei edes
-lupausta, että se sopii johonkin tiettyyn käyttötarkoitukseen.
+Kalenterin sisällöllä eli merkkipäivien kalenteripaikoilla ei ole
+tekijänoikeutta. Kalenterin Emacs-toteutus ei sekään välttämättä ylitä
+teoskynnystä, mutta vaikka se ylittäisi, tekijä luopuu kaikista
+tekijänoikeuksistaan pysyvästi ja enimmäislaajuudessaan.
+Luopumisjulistus on [Creative Commons CC0][CC0] -lisenssin mukainen.
 
 [PGP]: http://www.iki.fi/tlikonen/pgp-key.asc
+[CC0]: https://creativecommons.org/publicdomain/zero/1.0/legalcode.fi
