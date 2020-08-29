@@ -1,2 +1,2 @@
-(define-package "suomalainen-kalenteri" "2019.3.10"
+(define-package "suomalainen-kalenteri" "2020.8.29"
   "Finnish national and Christian holidays for calendar")
