@@ -28,7 +28,7 @@
 
     (holiday-fixed 1 1 "Uudenvuodenpäivä")
     (holiday-fixed 1 6 "Loppiainen")
-    ;; (holiday-fixed 1 19 "Pyhän Henrikin muistopäivä")
+    (holiday-fixed 1 19 "Pyhän Henrikin muistopäivä")
     (holiday-fixed 1 27 "Vainojen uhrien muistopäivä")
 
     (holiday-sexp '(let ((day (calendar-nth-named-day 1 0 2 year 2)))
