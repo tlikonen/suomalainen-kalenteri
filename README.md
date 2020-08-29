@@ -13,8 +13,8 @@ Kalenteriin tulevat viralliset suomalaiset merkkipäivät, jotka on
 julkaistu [Helsingin yliopiston almanakkatoimiston][Almanakka]
 kalenterissa.
 
-[Emacs]:     http://www.gnu.org/software/emacs/
-[Almanakka]: http://almanakka.helsinki.fi/
+[Emacs]:     https://www.gnu.org/software/emacs/
+[Almanakka]: https://almanakka.helsinki.fi
 
 
 Asentaminen
@@ -23,7 +23,7 @@ Asentaminen
 Helpoin asennustapa on [Melpa][]-pakettivaraston käyttäminen. Sitä
 kautta asennus on automaattinen eikä mitään erityistä tarvitse tehdä.
 
-[Melpa]: http://melpa.org/
+[Melpa]: https://melpa.org/
 
 Asentamiseen on myös toinen tapa: suomalainen kalenteri tulee käyttöön,
 kun tiedoston `suomalainen-kalenteri.el` sisältämä Emacs Lisp -koodi
