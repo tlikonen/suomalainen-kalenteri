@@ -73,7 +73,6 @@
     (holiday-fixed 5 1 "Vappu, suomalaisen työn päivä (liputus)")
     (holiday-fixed 5 9 "Eurooppa-päivä (liputus)")
     (holiday-fixed 5 12 "J. V. Snellmanin päivä, suomalaisuuden päivä (liputus)")
-
     (holiday-float 5 0 2 "Äitienpäivä (liputus)")
     (holiday-float 5 0 3 "Kaatuneitten muistopäivä (liputus, puolitangossa)")
 
