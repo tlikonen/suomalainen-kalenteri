@@ -28,6 +28,7 @@
 
     (holiday-fixed 1 1 "Uudenvuodenpäivä")
     (holiday-fixed 1 6 "Loppiainen")
+    (holiday-fixed 1 18 "Rukouspäivä")
     (holiday-fixed 1 19 "Pyhän Henrikin muistopäivä")
     (holiday-fixed 1 27 "Vainojen uhrien muistopäivä")
 
@@ -91,6 +92,7 @@
 
     (holiday-fixed 10 10 "Aleksis Kiven päivä, suomalaisen kirjallisuuden päivä (liputus)")
     (holiday-fixed 10 24 "YK:n päivä (liputus)")
+    (holiday-fixed 10 24 "Rukouspäivä")
     (holiday-float 10 6 1 "Pyhäinpäivä" 31)
 
     (holiday-fixed 11 6 "Ruotsalaisuuden päivä, Kustaa Aadolfin päivä (liputus)")
