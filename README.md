@@ -48,7 +48,7 @@ Tekijä ja tekijänoikeus
 
 Tekijä: Teemu Likonen <<tlikonen@iki.fi>>
 
-OpenPGP-avain: [4E10 55DC 84E9 DFF6 13D7 8557 719D 69D3 2453 9450][PGP]
+OpenPGP-avain: [6965F03973F0D4CA22B9410F0F2CAE0E07608462][PGP]
 
 Kalenterin sisällöllä eli merkkipäivien kalenteripaikoilla ei ole
 tekijänoikeutta. Kalenterin Emacs-toteutus ei sekään välttämättä ylitä
