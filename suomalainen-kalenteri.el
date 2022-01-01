@@ -96,9 +96,9 @@
 
     (holiday-fixed 11 6 "Ruotsalaisuuden päivä, Kustaa Aadolfin päivä (liputus)")
     (holiday-float 11 0 2 "Isänpäivä (liputus)")
-    (if (>= displayed-year 2020)
-        (holiday-fixed 11 20 "Lapsen oikeuksien päivä (liputus)")
-      (holiday-fixed 11 20 "Lapsen oikeuksien päivä"))
+    (holiday-fixed 11 20 (if (>= displayed-year 2020)
+                             "Lapsen oikeuksien päivä (liputus)"
+                           "Lapsen oikeuksien päivä"))
 
     (holiday-fixed 12 6 "Itsenäisyyspäivä (liputus)")
     (when (>= displayed-year 2011)
