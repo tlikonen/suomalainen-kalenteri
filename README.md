@@ -29,8 +29,9 @@ Asentamiseen on myös toinen tapa: suomalainen kalenteri tulee käyttöön,
 kun tiedoston `suomalainen-kalenteri.el` sisältämä Emacs Lisp -koodi
 suoritetaan. Lienee järkevintä asettaa Emacs tekemään se
 automaattisesti, kun `calendar`-osa ladataan. Emacsin
-käynnistystiedostoon `~/.emacs` tai `~/.emacs.d/init.el` voi lisätä
-esimerkiksi seuraavanlaisen lausekkeen:
+käynnistystiedostoon `~/.emacs`, `~/.emacs.d/init.el` tai
+`~/.config/emacs/init.el` voi lisätä esimerkiksi seuraavanlaisen
+lausekkeen:
 
     (with-eval-after-load 'calendar
       (load "~/hakemisto/suomalainen-kalenteri.el" t t))
