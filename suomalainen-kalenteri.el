@@ -83,7 +83,9 @@
     (holiday-fixed 7 27 "Unikeonpäivä")
 
     (when (>= displayed-year 2020)
-      (holiday-float 8 6 -1 "Suomen luonnon päivä"))
+      (holiday-float 8 6 -1 (if (>= displayed-year 2023)
+                                "Suomen luonnon päivä (liputus)"
+                              "Suomen luonnon päivä")))
 
     (when (>= displayed-year 2010)
       (holiday-fixed 9 5 "Yrittäjän päivä"))
