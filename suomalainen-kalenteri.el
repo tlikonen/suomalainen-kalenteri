@@ -29,6 +29,8 @@
     (holiday-fixed 1 1 "Uudenvuodenpäivä")
     (holiday-fixed 1 6 "Loppiainen")
     (holiday-fixed 1 18 "Rukouspäivä")
+    ;; Pyhän Henrikin muistopäivä on joinakin vuosina kalenterissa ja
+    ;; joinakin ei. Vuodesta 2010 alkaen se on merkitty 2014 ja 2020.
     (holiday-fixed 1 19 "Pyhän Henrikin muistopäivä")
     (holiday-fixed 1 27 "Vainojen uhrien muistopäivä")
 
