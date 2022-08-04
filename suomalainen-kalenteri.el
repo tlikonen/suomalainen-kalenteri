@@ -93,7 +93,7 @@
       (holiday-fixed 9 5 "Yrittäjän päivä"))
     (holiday-float 9 0 1 "Mikkelinpäivä" 29)
 
-    (when (>= displayed-year 2013)
+    (when (>= displayed-year 2023)
       (holiday-fixed 10 1 "Miina Sillanpään päivä, kansalaisvaikuttamisen päivä (liputus)"))
     (holiday-fixed 10 10 "Aleksis Kiven päivä, suomalaisen kirjallisuuden päivä (liputus)")
     (holiday-fixed 10 24 "YK:n päivä (liputus)")
