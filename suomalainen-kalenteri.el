@@ -65,7 +65,9 @@
     (holiday-easter-etc 56 "Pyhän Kolminaisuuden päivä")
     (holiday-easter-etc 91 "Apostolien päivä")
     (holiday-easter-etc 105 "Kirkastussunnuntai")
-    (holiday-easter-etc 203 "Uskonpuhdistuksen muistopäivä")
+    (holiday-easter-etc 203 (if (>= displayed-year 2023)
+                                "Reformaation päivä"
+                              "Uskonpuhdistuksen muistopäivä"))
 
     (when (>= displayed-year 2014)
       (holiday-fixed 4 8 "Romanien kansallispäivä"))
