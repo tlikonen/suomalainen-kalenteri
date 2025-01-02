@@ -32,7 +32,9 @@
     ;; Pyhän Henrikin muistopäivä on joinakin vuosina kalenterissa ja
     ;; joinakin ei. Vuodesta 2010 alkaen se on merkitty 2014 ja 2020.
     (holiday-fixed 1 19 "Pyhän Henrikin muistopäivä")
-    (holiday-fixed 1 27 "Vainojen uhrien muistopäivä")
+    (holiday-fixed 1 27 (if (>= displayed-year 2025)
+                            "Holokaustin muistopäivä"
+                          "Vainojen uhrien muistopäivä"))
 
     (holiday-sexp '(let ((day (calendar-nth-named-day 1 0 2 year 2)))
                      (if (equal day (caar (holiday-easter-etc -49)))
