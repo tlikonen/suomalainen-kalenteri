@@ -1,4 +1,4 @@
-;;; suomalainen-kalenteri.el --- Finnish holidays for Emacs calendar.
+;;; suomalainen-kalenteri.el --- Finnish holidays for Emacs calendar. -*- lexical-binding:t -*-
 
 ;; Author: Teemu Likonen <tlikonen@iki.fi>
 ;; URL: https://github.com/tlikonen/suomalainen-kalenteri
