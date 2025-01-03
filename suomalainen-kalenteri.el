@@ -33,7 +33,7 @@
     ;; joinakin ei. Vuodesta 2010 alkaen se on merkitty 2014 ja 2020.
     (holiday-fixed 1 19 "Pyhän Henrikin muistopäivä")
     (holiday-fixed 1 27 (if (>= displayed-year 2025)
-                            "Holokaustin muistopäivä"
+                            "Holokaustin uhrien muistopäivä"
                           "Vainojen uhrien muistopäivä"))
 
     (holiday-sexp '(let ((day (calendar-nth-named-day 1 0 2 year 2)))
