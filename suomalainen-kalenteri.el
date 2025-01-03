@@ -72,7 +72,9 @@
                               "Uskonpuhdistuksen muistopäivä"))
 
     (when (>= displayed-year 2014)
-      (holiday-fixed 4 8 "Romanien kansallispäivä"))
+      (holiday-fixed 4 8 (if (>= displayed-year 2025)
+                             "Kansainvälinen romanipäivä"
+                           "Romanien kansallispäivä")))
     (holiday-fixed 4 9 "Mikael Agricolan päivä, suomen kielen päivä (liputus)")
     (holiday-fixed 4 27 "Kansallinen veteraanipäivä (liputus)")
 
